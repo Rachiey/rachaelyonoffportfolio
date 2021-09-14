@@ -1,5 +1,17 @@
-body {text-align: center;}
+body {
+    text-align: center;
+    background-image: url("https://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-3-1536x1024.jpg");
+}
 
-h2 {font-size: 20px;}
-h3 {font-size: 20px;}
-h4 {font-size: 20px;}
+h1 {
+    color: #9E50DC;
+}
+
+p { color: #6F2CA4
+
+}
+
+h2,h3,h4 {
+    font-size: 20px;
+    color: #6F2CA4;
+}
