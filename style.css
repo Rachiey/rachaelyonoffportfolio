@@ -7,11 +7,13 @@ h1 {
     color: #9E50DC;
 }
 
-p { color: #6F2CA4
+p { color: #6F2CA4;
+    background: rgba(255, 255, 255, .3); 
 
 }
 
 h2,h3,h4 {
     font-size: 20px;
     color: #6F2CA4;
+    background: rgba(255, 255, 255, .3);
 }
