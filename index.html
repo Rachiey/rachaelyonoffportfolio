@@ -1,35 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="main.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6fa78451e4.js" crossorigin="anonymous"></script>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
     <title>Rachael Yonoff Portfolio</title>
+
+    <link href="/style.css" rel="stylesheet">
+    <script defer src="/main.js"></script>
+    <script defer src="https://kit.fontawesome.com/6fa78451e4.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}"> -->
+    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png"/>
 </head>
 
-<body>
+<body class = "autumn-theme">
+<section id="screen1" class="screen screen_num_1">
+    <h1 id="name" class="screen__header header header_lvl_1">Rachael Yonoff</h1>
+    <span id="currentTitle" class="current_title slogan ">Trainee Full-Stack Developer</span>
 
-    <div class="sun-moon-theme">
-        <i id="moon" class="far fa-moon " title="dark dimmed"></i>
-        <i id="sun" class="fas fa-sun hide-icon "></i>
-    </div>
-          
-    <h1>Rachael Yonoff's Portfolio</h1>
-    <img src="https://koshman.ca/wp-content/uploads/2018/06/placeholder-woman.png" alt = "woman placeholder" width=250>
-   
-    <p>[Insert intro paragraph here]</p> 
-<h2>Work Experience</h2>
-<h3>Education</h3>
-<h4>Hobbies</h4>
+    <article class="screen__step intro_background introduction">
+        <h2 class="screen__header header header_lvl_2">Introduction</h2>
+        <span class="label">HELLO!</span>
+        <p>Welcome to my portfolio! I am a recent Digital Culture graduate (KCL) aiming to dive into the field of tech. Currently partaking in a 13 week coding course provided by Futureproof to assist in my journey. Feel free to explore my profile, don't forget to embrace the seasonal toggles (bottom right)! </p>
 
- 
+    </article>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <article class="screen__step skills_background skills">
+        <h2 class="screen__header skills_background header_lvl_2">skills</h2>
+        <span class="label">SKILLS</span>
+        <p>Testingtesting123</p>
+       
+    </article>
+
+    <article class="screen__step education_background education">
+        <h2 class="screen__header header header_lvl_2">TEXT HERE</h2>
+        <span class="label">EDUCATION AND WORK</span>
+        <p>Testingtesting123</p>
+        <span class="label">TEXT HERE</span>
+        
+    </article>
+
+
+    <article class="screen__step project_background projects">
+        <h2 class="screen__header header header_lvl_2">TEXT HERE</h2>
+        <span class="label">PROJECTS</span>
+        <p>Notify - Music App created with React</p>
+        <p>Tech used:</p>
+        <p>Image example here</p>
+        <span class="label">https://not-ify.netlify.app/</span>
+        <p>TravelShare - Anonymous Journal App created with Javascript</p>
+        <p>Tech used:</p>
+        <p>Image example here</p>
+        <span class="label">https://bagels-journal-project.netlify.app/client/html/mainpage</span>
+        <p>HabTrac - Habit tracker with verification capability </p>
+        <p>Tech used:</p>
+        <p>Image example here</p>
+        <span class="label">https://habtrac.netlify.app/</span>
+       
+    </article>
+
+</section>
+
+<div class="indicator" id="indicator"></div>
+
+
+<div class="season-container"> 
+<div class="spring-season">
+    <i id="spring" class="fas fa-seedling" title="spring theme"></i>
+</div>
+<div class="summer-season">
+    <i id="summer" class="fas fa-sun" title="summer theme"></i>
+</div>
+
+<div class="autumn-season">
+    <i id ="autumn" class="fas fa-coffee" title="autumn theme"></i>
+</div>
+
+<div class="winter-season">
+    <i id ="winter" class="fas fa-snowflake" title="winter theme"></i>
+</div>
+</div>
+
+<a href="#name" class="scrollup" id="scroll-up">
+    <i class="fas fa-angle-double-up"></i></i>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://rawgit.com/Promo/scrollissimo/master/dist/scrollissimo.min.js"></script>
+
 </body>
 </html>
