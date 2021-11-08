@@ -1,5 +1,341 @@
-body {text-align: center;}
+/* Patrick Hand Font */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-h2 {font-size: 20px;}
-h3 {font-size: 20px;}
-h4 {font-size: 20px;}
+html
+{
+    height: 1px;
+    min-height: 90%;
+    margin: auto;
+    width: 960px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    height: 13000px;
+    min-height: 90%;
+    margin: 0;
+    padding: 0;
+    background: url(images/animalcrossing.jpg) repeat top left;
+    background-attachment: fixed;
+
+}
+
+.indicator
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-transform: scale3d(0,1,1);
+            transform: scale3d(0,1,1);
+    opacity: .25;
+    background: #8c84ed;
+    will-change: scale;
+}
+
+.header
+{
+    font-weight: bold;
+    line-height: 1;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #8c84ed;
+    font-family: 'Patrick Hand', cursive;
+    -webkit-text-stroke: 1px #775edb;
+}
+  
+
+.header_lvl_1
+{
+    font-size: 40px;
+}
+
+.header_lvl_2
+{
+    font-size: 20px;
+    
+}
+.code
+{
+    font-family: monospace;
+    line-height: 2em;
+
+    overflow: auto;
+
+    padding: 7px;
+
+    white-space: pre;
+
+    background: #fff;
+}
+.welcomelabel
+{
+    font-size: .85em;
+}
+.screen
+{
+    width: 100%;
+    min-height: 100%;
+}
+
+.screen_num_1
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    -webkit-transform: translate3d(0, 0, 0) perspective(2000px);
+            transform: translate3d(0, 0, 0) perspective(2000px);
+
+    -webkit-perspective: 2000px;
+            perspective: 2000px;
+    will-change: top;
+}
+
+.screen_num_1 .screen__header
+{
+    font-size: 180px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    text-align: center;
+
+    will-change: top, scale;
+}
+
+.current_title
+{
+    font-size: 16px;
+    position: absolute;
+    top: 20%;
+    left: -100%;
+    display: inline-block;
+    width: 100%;
+    -webkit-transform: translate3d(0, 125px, 0);
+            transform: translate3d(0, 125px, 0);
+    text-align: center;
+    color: #fbf8e9;
+    font-family: 'Patrick Hand', cursive;
+}
+.screen__step
+{
+    visibility: hidden;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 10px;
+    -webkit-transform-origin: 0 0 0;
+            transform-origin: 0 0 0;
+    border-radius: 5px;
+    font-family: 'Patrick Hand', cursive;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: translateZ(0) rotate3d(1, 0, 0, 90deg);
+            transform: translateZ(0) rotate3d(1, 0, 0, 90deg);      
+}
+
+p {
+    text-align: left;
+}
+
+.intro_background
+{
+    color: #fff;
+    text-align: center;
+}
+
+.introduction
+{
+    margin-top: 170px;
+}
+
+.intro_background .header
+{
+    color: #fff;
+    text-align: center;
+ 
+}
+.intro_background .label
+{
+    color: #8c84ed;
+    -webkit-text-stroke: 1px #775edb;
+    font-size: 50px;
+    text-align: center;
+}
+
+.skills_background
+{
+    
+    background: url(images/wood.png) repeat right;
+    color: #fff;
+}
+/* .skills_background .header
+{
+    color: #8c84ed;
+    
+} */
+
+.education_background
+{
+    /* background: #8c84ed;
+    border: 4px solid #8c84ed; */
+    background: url(images/wood.png) repeat right;
+    color: #fff;
+}
+
+.education_background .header
+{
+    color: #fff;
+}
+.education_background .label
+{
+    color: #fff;
+}
+
+.project_background
+{
+    /* background: #8c84ed;
+    border: 4px solid #8c84ed; */
+    background: url(images/wood.png) repeat right;
+    color: #fff;
+}
+.project_background .header
+{
+    color: #fff;
+}
+.project_background .label
+{
+    color: #fff;
+}
+
+
+/* ==SEASONS THEME== */
+.season-container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:  flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+.spring-season{
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    position: sticky;
+    top: 100%;
+    right: 0%;
+    margin-right: 90px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.summer-season{
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    position: sticky;
+    top: 100%;
+    right: 0%;
+    margin-right: 90px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.autumn-season{
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    position: sticky;
+    top: 100%;
+    right: 0%;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.winter-season{
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    position: sticky;
+    top: 100%;
+    right: 0%;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* ==SEASON THEMES== */
+.spring-theme {
+    background-color: #064b15;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background: url(images/animalcrossing.jpg) repeat top left;
+
+}
+
+.summer-theme {
+    background-color: #dfc907;
+    color: #fcfcfcd7;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background: url(images/summer.jpg) repeat top left;
+
+}
+
+.summer-theme .header {
+    color:#8a17e8;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.summer-theme .current_title {
+    color:white;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.summer-theme .intro_background .label{
+    color: #8a17e8;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.summer-theme .intro_background {
+    color:white;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+
+
+
+.autumn-theme {
+    background-color: #b86200;
+    color: #fcfcfcd7;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background: url(images/autumn.jpg) repeat top left;
+
+}
+
+.winter-theme {
+    background-color: #142c49;
+    color: #fcfcfcd7;
+    background: url(images/winter.jpg) repeat top left;
+
+}
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    transition: .4s;
+}
