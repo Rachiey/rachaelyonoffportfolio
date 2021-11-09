@@ -16,7 +16,7 @@ html
 body
 {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    height: 18500px;
+    height: 11500px;
     min-height: 90%;
     margin: 0;
     padding: 0;
@@ -50,7 +50,8 @@ body
     font-family: 'Patrick Hand', cursive;
     -webkit-text-stroke: 1px #775edb;
 }
-  
+
+
 
 .header_lvl_1
 {
@@ -75,10 +76,10 @@ body
 
     background: #fff;
 }
-.welcomelabel
+/* .welcomelabel
 {
     font-size: .85em;
-}
+} */
 .screen
 {
     width: 100%;
@@ -475,4 +476,10 @@ p {
 }
 .timelineText {
     color: black;
+}
+
+h2.skills, h2.education, h2.projects {
+    color:white;
+    text-align: center;
+    font-size: 30px;
 }
