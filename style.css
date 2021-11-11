@@ -7,7 +7,8 @@
 }
 html
 {
-    height: 1px;
+    /* height: 1px; */
+    height:100vh;
     min-height: 90%;
     margin: auto;
     width: 960px;
@@ -18,8 +19,7 @@ html
 body
 {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    height: 13500px;
-    min-height: 90%;
+    height: 12500px;
     margin: 0;
     padding: 0;
     background: url(images/animalcrossing.jpg) repeat top left;
@@ -38,7 +38,7 @@ body
 }
 
 
-.uil-github-alt:hover, .uil-linkedin-alt:hover, .fa-envelope:hover{
+.fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover{
   color: white;
 }
 
