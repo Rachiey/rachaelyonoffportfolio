@@ -33,23 +33,34 @@ window.addEventListener('load', function(){
 });
 
 
+/*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName('skills__content'),
+    skillsHeader = document.querySelectorAll('.skills__header');
+
+function toggleSkills() {
+    let itemClass = this.parentNode.className;
+
+    for(i = 0; i < skillsContent.length; i++){
+        skillsContent[i].className = 'skills__content skills__close';
+    }
+
+    if(itemClass === 'skills__content skills__close'){
+        this.parentNode.className = 'skills__content skills__open';
+    }
+}
+
+skillsHeader.forEach((el) => {
+    el.addEventListener('click', toggleSkills);
+});
+
 
 // //For theme toggle
 //for spring
 const springIcon = document.querySelector('.spring-season');
-//for summer
 const summerIcon = document.querySelector('.summer-season');
-// //for autumn
 const autumnIcon = document.querySelector('.autumn-season');
-// //for winter
 const winterIcon = document.querySelector('.winter-season');
-
 const body = document.body;
-
-// const spring = document.getElementById('spring');
-// const summer = document.getElementById('summer');
-// const autumn = document.getElementById('autumn');
-// const winter = document.getElementById('winter');
 
 const theme = localStorage.getItem("theme");
 const isSpring = localStorage.getItem('isSpring');
@@ -66,15 +77,6 @@ isAutumn && body.classList.add('autumn-theme');
 isWinter && body.classList.add('winter-theme');
 }
 
-// if (theme === spring) {
-//     body.className = "spring-theme";
-// } else if (theme === summer) {
-//     body.className = "summer-theme";
-// } else if (theme === autumn) {
-//         document.body.className = "autumn-theme";
-// } else if (theme === winter) {
-//     document.body.className = "winter-theme";
-// }
 
 summerIcon.onclick = () => {
 if (body.classList.contains('spring-theme') || body.classList.contains('autumn-theme') || body.classList.contains('winter-theme')) {
@@ -127,7 +129,6 @@ if (body.classList.contains('spring-theme') || body.classList.contains('summer-t
   body.classList.remove('summer-theme');
   body.classList.remove('autumn-theme');
   body.classList.add('winter-theme')
-//   localStorage.removeItem('isAutumn');
 
 } else {
     body.classList.contains('winter-theme');
