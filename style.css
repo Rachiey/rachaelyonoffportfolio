@@ -18,13 +18,42 @@ html
 body
 {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    height: 11500px;
+    height: 13500px;
     min-height: 90%;
     margin: 0;
     padding: 0;
     background: url(images/animalcrossing.jpg) repeat top left;
     background-attachment: fixed;
 
+}
+
+.iconLinks {
+  color:#8c84ed !important;
+  font-size: 50px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+
+.uil-github-alt:hover, .uil-linkedin-alt:hover, .fa-envelope:hover{
+  color: white;
+}
+
+.home__social-icon{
+  text-decoration: none;
+  color:#8c84ed;
+}
+
+a:link { text-decoration: none; color: #8c84ed !important; }
+a​:active { text-decoration: none; color: #8c84ed !important; }
+a​:visited { text-decoration: none; color: #8c84ed !important;}
+a​:hover { text-decoration: none; color: white !important; }
+
+.intro {
+  font-size: 20px; 
 }
 
 .container{
@@ -63,7 +92,7 @@ body
     padding: 0;
     color: #8c84ed;
     font-family: 'Patrick Hand', cursive;
-    -webkit-text-stroke: 1px #775edb;
+    -webkit-text-stroke: 1px #775de0;
 }
 
 
@@ -178,13 +207,13 @@ p {
     text-align: center;
  
 }
-.intro_background .label
+/* .intro_background .label
 {
-    color: #8c84ed;
-    -webkit-text-stroke: 1px #775edb;
-    font-size: 50px;
+    color:#6358d7;
+    -webkit-text-stroke: 3px #775edb;
+    font-size: 70px;
     text-align: center;
-}
+} */
 
 .skills_background
 {
@@ -246,6 +275,9 @@ p {
   margin-bottom: var(--mb-0-5);
 }
 
+
+
+
 .skills__name{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
@@ -253,45 +285,6 @@ p {
 }
 
 
-.skills__laravel{
-  width: 80%;
-}
-
-.skills__django{
-  width: 60%;
-}
-
-.skills__php{
-  width: 80%;
-}
-
-.skills__typescript{
-  width: 70%;
-}
-
-.skills__react{
-  width: 70%;
-}
-
-.skills__material{
-  width: 60%;
-}
-
-.skills__javascript{
-  width: 80%;
-}
-
-.skills__formik{
-  width: 60%;
-}
-
-.skills__mysql{
-  width: 80%;
-}
-
-.skills__graphql{
-  width: 70%;
-}
 
 .skills__close .skills__list{
   height: 0;
@@ -309,6 +302,88 @@ p {
 
 
 
+/*==================== QUALIFICATION ====================*/
+.qualification__container{
+  font-family: 'Varela Round', sans-serif;
+  margin-bottom: 20px;
+}
+
+.qualification__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+}
+
+.qualification__button{
+  font-size: 25px;
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.qualification__button:hover{
+  color: #958fd4;
+}
+
+.qualification__icon{
+  font-size: 1.8rem;
+  margin-right: var(--mb-0-25);
+}
+
+.qualification__data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color:#8c84ed;
+}
+
+.qualification__subtitle{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.qualification__calendar{
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.qualification__rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #8c84ed;
+  border-radius: 50%;
+}
+
+.qualification__line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #8c84ed;
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content]{
+  display: none;
+}
+
+.qualification__active[data-content]{
+  display: block;
+}
+
+.qualification__button.qualification__active{
+  color: #8c84ed;
+}
+
+.qualification__tech{
+  border-bottom: 3px solid var(--first-color-alt);
+  border-radius: .2rem;
+}
 
 .education_background
 {
@@ -456,154 +531,14 @@ p {
     background: url(images/winter.jpg) repeat top left;
 
 }
-
-/* .scrollup{
-    position: fixed;
-    right: 1rem;
-    bottom: 5rem;
-    opacity: .8;
-    padding: 0 .3rem;
-    border-radius: .4rem;
-    transition: .4s;
-} */
-
-
-
   
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  /* Container around content */
   .container {
     padding: 10px 40px;
     position: relative;
- 
     width: 100%;
   }
-  
-  /* The circles on the timeline */
-  /* .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #8c84ed;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  } */
-  
-  /* Place the container to the left */
-  .left {
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-    .timeline::after {
-      left: 31px;
-    }
-  
-  /* Full-width containers */
-    .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-  /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-      left: 60px;
-      border: medium solid white;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-    }
-  
-  /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-      left: 15px;
-    }
-  
-  /* Make all right containers behave like the left ones */
-    .right {
-      left: 0%;
-    }
-  }
-
-.timelineYear {
-    color:black;
-}
-.timelineText {
-    color: black;
-}
 
 h2.skills, h2.education, h2.projects {
-    color:white;
     text-align: center;
     font-size: 30px;
 }
