@@ -1,5 +1,7 @@
 /* Patrick Hand Font */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -24,6 +26,19 @@ body
     background-attachment: fixed;
 
 }
+
+.container{
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
 
 .indicator
 {
@@ -76,10 +91,7 @@ body
 
     background: #fff;
 }
-/* .welcomelabel
-{
-    font-size: .85em;
-} */
+
 .screen
 {
     width: 100%;
@@ -179,12 +191,124 @@ p {
     
     background: url(images/wood.png) repeat right;
     color: #fff;
+
+
 }
-/* .skills_background .header
-{
-    color: #8c84ed;
-    
-} */
+/*==================== SKILLS ====================*/
+.skills__container{
+  row-gap: 0;
+  display:flex !important;
+  justify-content: center;
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.skills__header{
+  display: grid;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skills__icon,
+.skills__arrow,
+.skills__arrows{
+  font-size: 2rem;
+  color: var(--first-color);
+
+}
+
+
+
+.skills__icon{
+  margin-right: var(--mb-0-75);
+}
+
+.skills__title{
+  font-size: var(--h3-font-size);
+
+}
+
+
+.skills__arrow{
+  margin-left: auto;
+  transition: .4s;
+}
+
+.skills__list{
+  row-gap: 1.5rem;
+  padding:10px;
+}
+
+.skills__titles{
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  display: grid;
+}
+
+
+.skills__laravel{
+  width: 80%;
+}
+
+.skills__django{
+  width: 60%;
+}
+
+.skills__php{
+  width: 80%;
+}
+
+.skills__typescript{
+  width: 70%;
+}
+
+.skills__react{
+  width: 70%;
+}
+
+.skills__material{
+  width: 60%;
+}
+
+.skills__javascript{
+  width: 80%;
+}
+
+.skills__formik{
+  width: 60%;
+}
+
+.skills__mysql{
+  width: 80%;
+}
+
+.skills__graphql{
+  width: 70%;
+}
+
+.skills__close .skills__list{
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list{
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.skills__open .skills__arrow{
+  transform: rotate(-180deg);
+}
+
+
+
 
 .education_background
 {
@@ -370,11 +494,11 @@ p {
     padding: 10px 40px;
     position: relative;
  
-    width: 50%;
+    width: 100%;
   }
   
   /* The circles on the timeline */
-  .container::after {
+  /* .container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -385,7 +509,7 @@ p {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
+  } */
   
   /* Place the container to the left */
   .left {
