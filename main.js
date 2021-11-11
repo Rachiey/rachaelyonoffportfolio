@@ -1,3 +1,5 @@
+
+
 window.addEventListener('load', function(){
     var screen1 = document.getElementById('screen1'),
         indicator = document.getElementById('indicator'),
@@ -8,7 +10,7 @@ window.addEventListener('load', function(){
         step2Skills = document.querySelector('.skills'),
         step3Edu = document.querySelector('.education'),
         step4Project = document.querySelector('.projects'),
-        firstTimeline = new TimelineMax({ paused: true });
+        firstTimeline = new TimelineMax({ paused: false });
 
     TweenLite.defaultEase = Linear.easeNone;
 
@@ -22,10 +24,11 @@ window.addEventListener('load', function(){
     firstTimeline.to(step3Edu, 1000, { rotationX: 0, visibility: 'visible' });
     firstTimeline.to(step4Project, 1000, { rotationX: 0, visibility: 'visible' });
     firstTimeline.to(screen1, 1000, { top: '-30%' }, '+=1500');
+    firstTimeline.to(screen1, 1000, { top: '-30%' }, '+=1500');
 
-    scrollissimo.add(firstTimeline, 0, 60);
+    scrollissimo.add(firstTimeline, 0, 80);
 
-    scrollissimo.add(new TweenMax(indicator, 13500, { scale: 1, ease: Linear.easeNone, paused: true }), 0);
+    scrollissimo.add(new TweenMax(indicator, 13500, { scale: 1, ease: Linear.easeNone, paused: true }), 1);
 
     window.addEventListener('scroll', function(){
         scrollissimo.knock();
