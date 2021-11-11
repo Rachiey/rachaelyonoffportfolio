@@ -25,7 +25,7 @@ window.addEventListener('load', function(){
 
     scrollissimo.add(firstTimeline, 0, 60);
 
-    scrollissimo.add(new TweenMax(indicator, 11500, { scale: 1, ease: Linear.easeNone, paused: true }), 0);
+    scrollissimo.add(new TweenMax(indicator, 13500, { scale: 1, ease: Linear.easeNone, paused: true }), 0);
 
     window.addEventListener('scroll', function(){
         scrollissimo.knock();
