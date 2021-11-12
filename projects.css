@@ -121,15 +121,16 @@ a{
     text-decoration: none;
 }
 
-img{
+/* img{
     max-width: 100%;
     height: auto;
-}
+} */
 
 
-.header
+#name.header
 {
     font-weight: bold;
+    width: 100%;
     line-height: 1;
     display: inline-block;
     margin: 0;
@@ -150,14 +151,14 @@ img{
 
 }
 
-.current_title
+#currentTitle.current_title
 {
     font-size: 20px;
     display: flex;
-
     text-align: center;
     color: #fbf8e9;
     font-family: 'Patrick Hand', cursive;
+    justify-content: center;
 }
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
@@ -165,13 +166,18 @@ img{
 }
 
 .section__title{
-    font-size: var(--h1-font-size);
+    font-size: 95px;
+    font-family: 'Patrick Hand', cursive;
+    color: #775de0;
+   
+
 }
 
 .section__subtitle{
     display: block;
-    font-size: var(--small-font-size);
+    font-size: 30px;
     margin-bottom: var(--mb-3);
+    font-family: 'Patrick Hand', cursive;
 }
 
 .section__title,
@@ -190,14 +196,6 @@ img{
     gap: 1.5rem;
 }
 
-.header{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    background-color: var(--body-color);
-}
 
 /*==================== NAV ====================*/
 .nav
@@ -755,27 +753,57 @@ img{
 }
 
 /*==================== PORTFOLIO ====================*/
+#portfolio.portfolio.section {
+
+    width: auto;
+    display: grid;
+
+}
 .portfolio__container{
     overflow: initial;
+
+    align-items: center;
+    justify-content: center;
+    /* height:500px;
+    width:500px; */
 }
 
 .portfolio__content{
     padding: 0 1.5rem;
+    width: auto;
+    height: 600px !important;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
 }
 
+
 .portfolio__img{
-    width: 265px;
+    width: 650px;
     border-radius: .5rem;
     justify-self: center;
 }
 
 .portfolio__title{
-    font-size: var(--h3-font-size);
+    font-size: 30px;
     margin-bottom: var(--mb-0-5);
+    font-family: 'Patrick Hand', cursive;
+ 
+    
 }
 
+.portfolio__data{
+
+    text-align:center;
+}
 .portfolio__description{
     margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button{
+    background-color: #8c84ed;;
+    text-align:center;
 }
 
 .portfolio__button:hover .button__icon{
@@ -813,6 +841,7 @@ img{
 .swiper-pagination-bullet{
     outline: none;
 }
+
 
 /*==================== PROJECT IN MIND ====================*/
 .project{
@@ -1063,7 +1092,6 @@ img{
     }
 
     .about__container,
-    .portfolio__content,
     .project__container,
     .footer__container{
         grid-template-columns: repeat(2, 1fr);
@@ -1183,9 +1211,9 @@ img{
         width: 450px;
     }
 
-    .portfolio__img{
-        width: 320px;
-    }
+    /* .portfolio__img{
+        width: 500px;
+    } */
     .portfolio__content{
         align-items: center;
     }
