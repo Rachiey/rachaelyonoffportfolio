@@ -1,5 +1,3 @@
-
-
 window.addEventListener('load', function(){
     var screen1 = document.getElementById('screen1'),
         indicator = document.getElementById('indicator'),
@@ -10,25 +8,25 @@ window.addEventListener('load', function(){
         step2Skills = document.querySelector('.skills'),
         step3Edu = document.querySelector('.education'),
         step4Project = document.querySelector('.projects'),
-        firstTimeline = new TimelineMax({ paused: false });
+        firstTimeline = new TimelineMax({ paused: true });
 
     TweenLite.defaultEase = Linear.easeNone;
 
     firstTimeline.to(header, 1000, { scale: 1, top: '35%' });
     firstTimeline.to(header, 1000, { scale: .5, top: '20%' });
     firstTimeline.to(currentTitle, 1000, { left: 0 });
-    firstTimeline.to(header, 1000, { top: '-1%' });
-    firstTimeline.to(currentTitle, 1000, { top: '-1%' }, '-=1000');
+    firstTimeline.to(header, 1000, { top: '-2%' });
+    firstTimeline.to(currentTitle, 1000, { top: '-2%' }, '-=1000');
     firstTimeline.to(step1Intro, 1000, { rotationX: 0, visibility: 'visible' });
     firstTimeline.to(step2Skills, 1000, { rotationX: 0, visibility: 'visible' });
     firstTimeline.to(step3Edu, 1000, { rotationX: 0, visibility: 'visible' });
     firstTimeline.to(step4Project, 1000, { rotationX: 0, visibility: 'visible' });
     firstTimeline.to(screen1, 1000, { top: '-30%' }, '+=1500');
-    firstTimeline.to(screen1, 1000, { top: '-30%' }, '+=1500');
+  
 
-    scrollissimo.add(firstTimeline, 0, 80);
+    scrollissimo.add(firstTimeline, 0, 60);
 
-    scrollissimo.add(new TweenMax(indicator, 13500, { scale: 1, ease: Linear.easeNone, paused: true }), 1);
+    scrollissimo.add(new TweenMax(indicator, 9500, { scale: 1, ease: Linear.easeNone, paused: true }), 0);
 
     window.addEventListener('scroll', function(){
         scrollissimo.knock();
@@ -76,6 +74,7 @@ tabs.forEach(tab =>{
         tab.classList.add('qualification__active');
     })
 })
+
 
 
 /*==================== THEME TOGGLE ====================*/

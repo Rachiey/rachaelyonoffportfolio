@@ -4,25 +4,124 @@
     <meta charset="utf-8">
     <title>Rachael Yonoff Portfolio</title>
 
-    <link href="/style.css" rel="stylesheet">
-    <script defer src="/main.js"></script>
+    <link href="/projects.css" rel="stylesheet">
+    <script defer src="/projects.js"></script>
     <script defer src="https://kit.fontawesome.com/6fa78451e4.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}"> -->
+    <link rel="stylesheet" href="/swiper-bundle.min.css">
+
     <link rel="shortcut icon" type="image/jpg" href="/images/favicon.png"/>
 </head>
-<body>
-    <p>Notify - Music App created with React</p>
-    <p>Tech used:</p>
-    <p>Image example here</p>
-    <span class="label">https://not-ify.netlify.app/</span>
-    <p>TravelShare - Anonymous Journal App created with Javascript</p>
-    <p>Tech used:</p>
-    <p>Image example here</p>
-    <span class="label">https://bagels-journal-project.netlify.app/client/html/mainpage</span>
-    <p>HabTrac - Habit tracker with verification capability </p>
-    <p>Tech used:</p>
-    <p>Image example here</p>
-    <span class="label">https://habtrac.netlify.app/</span>
-   </body>
+<body class = "autumn-theme">
+    <section id="screen1" class="screen screen_num_1">
+    <h1 id="name" class="screen__header header header_lvl_1">Rachael Yonoff</h1>
+    <span id="currentTitle" class="current_title slogan ">Trainee Full-Stack Developer</span>
+    </section>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most Recent Work</span>
 
-   </html>
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!--======================== PORTFOLIO 1 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="images/notify.png" alt="notify website example" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Notify</h3>
+                            <p class="portfolio__description">
+                                Notify - Music App created with React. 
+                            </p>
+                            <a href="https://not-ify.netlify.app/" class="button button--flex button--small portfolio__button">
+                                Website
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--======================== PORTFOLIO 2 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="images/travelshare.png" alt="travelshare website example" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">TravelShare</h3>
+                            <p class="portfolio__description">
+                                Anonymous Journal App created with Javascript.
+                            </p>
+                            <a href="https://bagels-journal-project.netlify.app/client/html/mainpage" class="button button--flex button--small portfolio__button">
+                                Website
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--======================== PORTFOLIO 3 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="images/hab-trac.png" alt="habtrac website example" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">HabTrac</h3>
+                            <p class="portfolio__description">
+                                Habit tracker with verification capability.
+                            </p>
+                            <a href="https://habtrac.netlify.app/" class="button button--flex button--small portfolio__button">
+                                Website
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--======================== PORTFOLIO 4 =============-->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="images/kumaflixsite.png" alt="kumaflix website example" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Kumaflix</h3>
+                            <p class="portfolio__description">
+                                Film app created with React; discover the favourite films of Rilakkuma and friends!
+                            </p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Website
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--============ Add Arrows =============-->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+
+                <!--============ Add Pagination =============-->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+      
+
+        <div class="season-container"> 
+            <div class="spring-season">
+                <i id="spring" class="fas fa-seedling" title="spring theme"></i>
+            </div>
+            <div class="summer-season">
+                <i id="summer" class="fas fa-sun" title="summer theme"></i>
+            </div>
+
+            <div class="autumn-season">
+                <i id ="autumn" class="fas fa-coffee" title="autumn theme"></i>
+            </div>
+
+            <div class="winter-season">
+                <i id ="winter" class="fas fa-snowflake" title="winter theme"></i>
+            </div>
+        </div>
+    <!--==================== SWIPER JS ====================-->
+    <script src="/swiper-bundle.min.js"></script>
+
+    </body>
+
+</html>
