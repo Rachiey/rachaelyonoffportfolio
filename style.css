@@ -37,6 +37,11 @@ body
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 500px) {
+  .iconLinks {
+    padding-top:75px;
+  }
+}
 
 .fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover{
   color: white;
@@ -170,6 +175,15 @@ a​:hover { text-decoration: none; color: white !important; }
     color: #fbf8e9;
     font-family: 'Patrick Hand', cursive;
 }
+
+@media screen and (max-width: 500px) {
+  .current_title {
+    margin-top: 50px;
+
+  }
+
+}
+
 .screen__step
 {
     visibility: hidden;
@@ -207,13 +221,6 @@ p {
     text-align: center;
  
 }
-/* .intro_background .label
-{
-    color:#6358d7;
-    -webkit-text-stroke: 3px #775edb;
-    font-size: 70px;
-    text-align: center;
-} */
 
 .skills_background
 {
