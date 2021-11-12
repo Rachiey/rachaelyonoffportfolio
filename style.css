@@ -570,3 +570,17 @@ h2.skills, h2.education, h2.projects {
   color: #7393B3;
 }
 
+
+.skills__background{
+  background-color: red;
+}
+
+#projectsPage{
+  text-decoration: none;
+  color:white !important;
+}
+
+#projectsPage:hover{
+  text-decoration: none;
+  color:#958fd4 !important;
+}
