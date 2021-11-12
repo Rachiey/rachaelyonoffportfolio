@@ -12,7 +12,7 @@ html
     min-height: 90%;
     margin: auto;
     width: 960px;
-    overflow: scroll;
+    overflow: none;
     scroll-behavior: smooth;
 }
 
@@ -539,13 +539,48 @@ p {
 
 }
   
-  .container {
+.container {
     padding: 10px 40px;
     position: relative;
     width: 100%;
-  }
+}
 
 h2.skills, h2.education, h2.projects {
     text-align: center;
     font-size: 30px;
+}
+
+#spring, #summer, #autumn, #winter {
+  font-size: 25px;
+}
+
+#spring:hover{
+  color: #50C878;
+}
+
+#summer:hover{
+  color: #FFC300;
+}
+
+#autumn:hover{
+  color: #900C3F;
+}
+
+#winter:hover{
+  color: #7393B3;
+}
+
+
+.skills__background{
+  background-color: red;
+}
+
+#projectsPage{
+  text-decoration: none;
+  color:white !important;
+}
+
+#projectsPage:hover{
+  text-decoration: none;
+  color:#958fd4 !important;
 }
