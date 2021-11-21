@@ -137,7 +137,6 @@ a{
     padding: 0;
     color: #8c84ed;
     font-family: 'Patrick Hand', cursive;
-    -webkit-text-stroke: 1px #775de0;
 }
 
 .screen_num_1 .screen__header
@@ -401,6 +400,7 @@ a{
 .button--flex{
     display: inline-flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .button--small{
